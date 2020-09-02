@@ -12,16 +12,17 @@ AS SELECT c."Date"
 , c."District"
 , c."Ward"
 , c."Community Area" as Community_Area
-, c."FBI Code"
+, c."FBI Code" as FBI_code
 , w."Humidity"
 , w."Pressure"
 , w."Temperature"
+, ((("Temperature" - 273.15) * 9/5) + 32) as temp_F
 , w."Description" as Weather_Desc
 , w."Wind_direction"
 , w."Wind_speed"
 FROM public.chicago_crime_updated c
-LEFT JOIN public.weather w ON c.Date = w.date
-						AND date_trunc('hour', c.time) = w.time
+LEFT JOIN public.weather w ON c.dt = w.dt
+						AND date_trunc('hour', c.dt_time) = w.dt_time
 						
 --Check to make sure it worked						
 SELECT * FROM public.v_crimeweather	
@@ -33,5 +34,5 @@ CASE WHEN Temperature BETWEEN 0 AND 49 THEN 'Cat1' ELSE
 FROM public.v_crimeweather	
 WHERE "Temperature" >= 0
 
-SELECT "Temperature", ((("Temperature" - 273.15) * 9/5) + 32) as F
+SELECT "Temperature", ((("Temperature" - 273.15) * 9/5) + 32) as temp_F
 FROM public.v_crimeweather	
