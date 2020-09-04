@@ -52,5 +52,8 @@ names so they didn't have spaces.  We joined the two tables together with a "lef
 
 7.)  FILTER & ANALYSIS - Once we created the view, we were able to run some interesting filters and analysis.  We ran these in a few separate sql files.  Some of the most interesting comparisons
 was to see the difference in the number of crimes committed in the hotter summer months versus the colder winter months.  We also grouped the data by month, and then compared that to some of the averages
-for the different weather categories...for example, comparing the number of crimes in a specific month to the average humidity, wind speed, temperature, etc...    
+for the different weather categories...for example, comparing the number of crimes in a specific month to the average humidity, wind speed, temperature, etc...
+
+8.)  CONCLUSION - In conclusion the project went well and we were able to extract, transform, and load our data to find some pretty interesting correlations between weather and the number of crimes in 
+Chicago.  Thank you for taking the time to review our project!    
                  
