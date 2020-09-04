@@ -40,7 +40,9 @@ table named "weather" and our data was ready to run SQL queries.
 
 
 5.)  TABLE SETUP IN POSTGRES USING SQL - We knew that we were going to want to run queries where we joined the two tables on date and time.  So, one of the things we needed to do was alter each
-table and give it a column that had just the date...and also a column that had just the time.
+table and give it a column that had just the date...and also a column that had just the time.  We also realized when we did the left join for the two tables that we were missing all of the weather data for
+December 31st, of 2016.  When Tawny dug into this further, she found that it was because the timestamps were making that data fall under January 1st of 2017.  So in order to fix these null values we went back
+and altered the filter in our jupyter notebook and we reloaded the data into our database. 
 
 
 6.)  VIEW CREATION IN POSTGRES - The next thing we did was run a query that we eventually turned into a "view."  In order to do this, we pulled in each of the columns that we knew we were going 
