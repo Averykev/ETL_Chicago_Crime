@@ -1,6 +1,8 @@
 # ETL_Chicago_Crime
 ETL Project comparing Chicago crime to weather.
 
+INSTRUCTIONS:  To see this project, just run the different Jupyter notebooks and build out the tables using the SQL scripts.  You can also run each of the SQL queries in PostgreSQL.  
+
 Project Outline:
 
 1.)  PROJECT SUMMARY - We pulled data from two different csv data files that we found on Kaggle.  One of them documented all of the crime statistics for the city of Chicago
