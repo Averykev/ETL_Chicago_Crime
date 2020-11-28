@@ -1,13 +1,7 @@
 # ETL_Chicago_Crime
 ETL Project comparing Chicago crime to weather.
 
-9/2/2020 - TN
-- Updated weather python file to include date change for all weather elements. Previously, had only updated temp for 12/31/2016.
-- Update combined SQL script & python file to include similar naming sauce as etl_project database and dt, dt_time for all added columns in both datasets
-- Updated view to include K to F conversion in temp
-
-
-9/3/2020 - Project Outline
+Project Outline:
 
 1.)  PROJECT SUMMARY - We pulled data from two different csv data files that we found on Kaggle.  One of them documented all of the crime statistics for the city of Chicago
 between 2012 and 2017.  The other one documented all of the weather statistics for 30 major cities in the United States and Canada from a October of 2012 to November of 2017.  
